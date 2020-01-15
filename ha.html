@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>HIGH4TEENS</title>
+    <link rel="stylesheet" type="text/css" href="ha.css">
+    <style>
+    
+    body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Fountain_pen_writing_%28literacy%29.jpg/1200px-Fountain_pen_writing_%28literacy%29.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+.w3-col s3, a{
+font-weight: bold;
+font-size:1.5em;
+}
+
+
+    </style>
+
+</head>
+<body>
+  
+
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+    </div>
+  </div>
+  
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <p class="line-1 anim-typewriter">Animation typewriter style using css steps()</p>
+  </header>
+  
+  <div class="w3-sand w3-grayscale w3-large">
+  
+  <div class="w3-container" id="about">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide" style=""><h3>ABOUT US</h3></span></h5>
+      <p> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+      <img src="high4teens_transparent_logo.png" style="width:100%;max-width:300px; display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;" class="w3-margin-top">
+    
+      <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+        <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        
+        </span>
+      </div>
+      
+      <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+      <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+    </div>
+  </div>
+  
+
+
+  <footer class="w3-center w3-black w3-padding-48 w3-large">
+    <p>Powered by HIGH4TEENS </p>
+  </footer>
+  
+  <script>
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+  
+  
+
+</body>
+</html>	
