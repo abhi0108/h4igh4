@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+     body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20pt;
+  font-weight: normal;
+  background: lightblue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    -90deg,
+    lightblue,
+    black
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    -90deg,
+    lightblue,
+    black
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    -90deg,
+    lightblue,
+    black
+  ); 
+  background: linear-gradient(-90deg, lightblue, black); /* Standard syntax */
+}
+
+.main {
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  background: transparent;
+  text-shadow: 1px 1px 1px #202020;
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.row_grid{
+  flex-direction: column;
+ 
+}
+.btn{
+  color:white;
+}
+
+span{
+  font-size:21px;
+  margin-left: 5%;
+  font-family: sans-serif;
+  color:white;
+}
+ </style>
+
+</head>
+
+<body>
+  <div class="header">
+    <button class="grid btn" style="float: right;" ><i class="fa fa-th-large"></i></button>
+    <button class="list btn" style="float:right ;"><i class='fa fa-bars'></i></button>
+    <span style="cursor: pointer;">Home</span>
+    <span style="margin-left:3%;cursor: pointer;">About us</span>
+  </div>
+  <br>
+  <div class="main">
+    <div class="container">
+       <div class="row">
+        <div class="column1" style="display: block;
+        margin-left: 0%;
+        margin-right: 2%;">
+         <div class="card" style="width:350px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;">
+          <img class="card-img-top" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/80677833_1110023912674925_5985079067787171585_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=p207EKgkczoAX-7fTdt&oh=55f501adb2a45aa3d6a42075f8d752ee&oe=5EC6EDBD" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <i style="font-size:27px;float: left;cursor: pointer;" id="clickme" class="fa fa-thumbs-o-up" > 0</i>
+            <i style="font-size:27px;cursor: pointer;" class="fa fa-comment-o" aria-hidden="true"></i>
+            <i style="font-size:27px;float: right;cursor: pointer;" class="fa fa-share" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i>
+          </div>
+          </div>
+        <br>
+        
+         <div class="card" style="width:350px;display: block;
+         margin-left: auto;
+         margin-right: auto;">
+            <img class="card-img-top" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/82951668_565950773996805_1559938599370022159_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=S5kWPoy4naIAX8NxoNb&oh=f45bf99b4a6a22fa6bb1321a9b3ed5f8&oe=5EB732BF">
+            <div class="card-body">
+              <i style="font-size:27px;float: left;cursor: pointer;" id="clickme" class="fa fa-thumbs-o-up" > 0</i>
+            <i style="font-size:27px;cursor: pointer;" class="fa fa-comment-o" aria-hidden="true"></i>
+            <i style="font-size:27px;float: right;cursor: pointer;" class="fa fa-share" aria-hidden="true"></i>
+            
+            </div>
+          </div>
+      
+        </div>
+
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              
+              <div class="modal-header">
+                <h4>share</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+              <div class="modal-body">
+                <a href="https://twitter.com/share" class="..." data-url="http://example.com">
+                  <i style="margin-left:2%;" class="fa fa-twitter"></i></i>
+              </a>
+              <a href="https://facebook.com/share" class="..." data-url="http://example.com">
+                <i class="fa fa-facebook"></i></i>
+            </a>
+            <a href="https://whatsapp.com/share" class="..." data-url="http://example.com">
+              <i style="margin-right:5% ;" class="fa fa-whatsapp"></i></i>
+          </a>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="column2" style="display: block;
+        padding-left: 0%;
+        margin-right: 2%;">
+         <div class="card" style="width:350px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;">
+          <img class="card-img-top" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/80677833_1110023912674925_5985079067787171585_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=p207EKgkczoAX-7fTdt&oh=55f501adb2a45aa3d6a42075f8d752ee&oe=5EC6EDBD" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <i style="font-size:27px;float: left;cursor: pointer;" id="clickme" class="fa fa-thumbs-o-up" > 0</i>
+            <i style="font-size:27px;cursor: pointer;" class="fa fa-comment-o" aria-hidden="true"></i>
+            <i style="font-size:27px;float: right;cursor: pointer;" class="fa fa-share" aria-hidden="true"></i>
+          </div>
+          </div>
+        <br>
+        
+         <div class="card" style="width:350px;display: block;
+         margin-left: auto;
+         margin-right: auto;">
+            <img class="card-img-top" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/82951668_565950773996805_1559938599370022159_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=S5kWPoy4naIAX8NxoNb&oh=f45bf99b4a6a22fa6bb1321a9b3ed5f8&oe=5EB732BF">
+            <div class="card-body">
+              <i style="font-size:27px;float: left;cursor: pointer;" id="clickme" class="fa fa-thumbs-o-up" > 0</i>
+            <i style="font-size:27px;cursor: pointer;" class="fa fa-comment-o" aria-hidden="true"></i>
+            <i style="font-size:27px;float: right;cursor: pointer;" class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+      
+        </div>
+
+        <div class="column3" style="display: block;
+        margin-left: 0%;
+        margin-right:auto;">
+         <div class="card" style="width:350px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;">
+          <img class="card-img-top" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/80677833_1110023912674925_5985079067787171585_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=p207EKgkczoAX-7fTdt&oh=55f501adb2a45aa3d6a42075f8d752ee&oe=5EC6EDBD" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <i style="font-size:27px;float: left;cursor: pointer;" id="clickme" class="fa fa-thumbs-o-up" > 0</i>
+            <i style="font-size:27px;cursor: pointer;" class="fa fa-comment-o" aria-hidden="true"></i>
+            <i style="font-size:27px;float: right;cursor: pointer;" class="fa fa-share" aria-hidden="true"></i>
+          </div>
+          </div>
+        <br>
+        
+         <div class="card" style="width:350px;display: block;
+         margin-left: auto;
+         margin-right: auto;">
+            <img class="card-img-top" src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/82951668_565950773996805_1559938599370022159_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=S5kWPoy4naIAX8NxoNb&oh=f45bf99b4a6a22fa6bb1321a9b3ed5f8&oe=5EB732BF">
+            <div class="card-body">
+              <i style="font-size:27px;float: left;cursor: pointer;" id="clickme" class="fa fa-thumbs-o-up" > 0</i>
+            <i style="font-size:27px;cursor: pointer;" class="fa fa-comment-o" aria-hidden="true"></i>
+            <i style="font-size:27px;float: right;cursor: pointer;" class="fa fa-share" aria-hidden="true"></i>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+  </div>
+</div>
+  <script>
+
+var button = document.getElementById("clickme"),
+
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML = " " + count;
+};
+const row = document.querySelector('.row')
+
+document.querySelector('.list').addEventListener('click' , () => {
+ 
+  row.classList.remove('row')
+  row.classList.add('row_grid')
+})
+ 
+document.querySelector('.grid').addEventListener('click' , () => {
+  
+  row.classList.remove('row_grid')
+  row.classList.add('row')
+})
+   
+  </script>
+</body>
+
+</html>
+ 
